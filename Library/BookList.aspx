@@ -15,7 +15,7 @@
                     <tr>
                         <th>Title</th>
                         <th>ISBN</th>
-                        <th>Author's Name</th>
+                        <th>Author Name</th>
                         <th></th>
                         <th>&nbsp;</th>
                     </tr>
@@ -24,8 +24,8 @@
                 <tr>
                     <td><%# Item.Field<string>("Title") %></td>
                     <td><%# Item.Field<string>("ISBN") %></td>
-                    <td><%# Item.Field<string>("FirstName") %></td>
-                    <td><%# Item.Field<string>("LastName") %></td>
+                    <td><%# Item.Field<string>("Name") %></td>
+<%--                    <td><%# Item.Field<string>("LastName") %></td>--%>
                     <td><asp:hyperlink runat="server" navigateurl='<%# $"~/BookEdit.aspx?ID={Item.Field<int>("ID")}" %>' text="Edit" /></td>
 <%--                    <td><asp:hyperlink runat="server" navigateurl='<%# $"~/AuthorEdit.aspx?ID={Item.Field<int>("Id")}" %>' text="Edit" /></td>--%>
                 </tr>

@@ -12,17 +12,11 @@
         <h1>WELCOME TO THE LIBRARY DATABASE</h1>
     </div>
 
-    <div>
-        <asp:hyperlink runat="server" NavigateUrl="~/AuthorsList.aspx" Text="Authors"></asp:hyperlink>
-    </div>
-    
-    <div>
-        <asp:hyperlink runat="server" NavigateUrl="~/BookList.aspx" Text="Books"></asp:hyperlink>
-    </div>
-        
-    <div>
-        <asp:hyperlink runat="server" NavigateUrl="~/LibraryList.aspx" Text="Library"></asp:hyperlink>
-    </div>
+     <ul>
+        <li><asp:hyperlink runat="server" navigateurl="~/AuthorsList.aspx">Authors</asp:hyperlink></li>
+        <li><asp:hyperlink runat="server" navigateurl="~/BookList.aspx">Books</asp:hyperlink></li>
+        <li><asp:hyperlink runat="server" navigateurl="~/LibraryList.aspx">Libraries</asp:hyperlink></li>
+     </ul>
 
     </form>
 </body>
