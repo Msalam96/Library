@@ -23,7 +23,7 @@ namespace Library
                     from Librarian
                     inner join Library 
                     on Library.ID = Librarian.LibraryID
-                    order by LastName
+                    order by EmployeeNumber
                 ");
 
                 Librarians.DataSource = dt.Rows;
