@@ -1,7 +1,7 @@
-﻿<%@ Page Title="Add Patron" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PatronAdd.aspx.cs" Inherits="Library.PatronAdd" %>
+﻿<%@ Page Title="Edit Patron" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PatronEdit.aspx.cs" Inherits="Library.PatronEdit" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">
 
-    <h2>Add Patron</h2>
+    <h2>Edit Patron</h2>
 
     <fieldset>
 
@@ -48,7 +48,11 @@
     </fieldset>
 
     <div>
-        <asp:button id="Save" runat="server" text="Save" onclick="Save_Click" />
+        <asp:button id="Save" runat="server" text="Save" onclick="Save_Click"/>
+    </div>
+
+    <div>
+        <asp:button id="Cancel" runat="server" text="Cancel" onclick="Cancel_Click" />
     </div>
 
 </asp:Content>

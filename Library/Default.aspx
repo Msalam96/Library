@@ -16,6 +16,7 @@
         <li><asp:hyperlink runat="server" navigateurl="~/AuthorsList.aspx">Authors</asp:hyperlink></li>
         <li><asp:hyperlink runat="server" navigateurl="~/BookList.aspx">Books</asp:hyperlink></li>
         <li><asp:hyperlink runat="server" navigateurl="~/LibraryList.aspx">Libraries</asp:hyperlink></li>
+         <li><asp:hyperlink runat="server" navigateurl="~/PatronList.aspx">Patrons</asp:hyperlink></li>
      </ul>
 
     </form>
