@@ -19,7 +19,7 @@ namespace Library
 
         protected void Save_Click(object sender, EventArgs e)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["Lib2020"].ConnectionString;
+            //string connectionString = ConfigurationManager.ConnectionStrings["Lib2020"].ConnectionString;
 
             //int? ID = null;
 
