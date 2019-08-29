@@ -71,6 +71,8 @@
     <Content Include="BookEdit.aspx" />
     <Content Include="BookList.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="LibrarianAdd.aspx" />
+    <Content Include="LibrariansList.aspx" />
     <Content Include="LibraryAdd.aspx" />
     <Content Include="LibraryEdit.aspx" />
     <Content Include="LibraryList.aspx" />
@@ -144,6 +146,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianAdd.aspx.cs">
+      <DependentUpon>LibrarianAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibrarianAdd.aspx.designer.cs">
+      <DependentUpon>LibrarianAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LibrariansList.aspx.cs">
+      <DependentUpon>LibrariansList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibrariansList.aspx.designer.cs">
+      <DependentUpon>LibrariansList.aspx</DependentUpon>
     </Compile>
     <Compile Include="LibraryAdd.aspx.cs">
       <DependentUpon>LibraryAdd.aspx</DependentUpon>
