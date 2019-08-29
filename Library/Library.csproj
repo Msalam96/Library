@@ -72,6 +72,7 @@
     <Content Include="BookList.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="LibraryAdd.aspx" />
+    <Content Include="LibraryEdit.aspx" />
     <Content Include="LibraryList.aspx" />
     <Content Include="packages.config" />
     <Content Include="Site.Master" />
@@ -147,6 +148,13 @@
     </Compile>
     <Compile Include="LibraryAdd.aspx.designer.cs">
       <DependentUpon>LibraryAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryEdit.aspx.cs">
+      <DependentUpon>LibraryEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LibraryEdit.aspx.designer.cs">
+      <DependentUpon>LibraryEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="LibraryList.aspx.cs">
       <DependentUpon>LibraryList.aspx</DependentUpon>
