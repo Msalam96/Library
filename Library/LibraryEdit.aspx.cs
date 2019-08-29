@@ -73,7 +73,7 @@ namespace Library
 
         protected void Cancel_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/AuthorsList.aspx");
+            Response.Redirect("~/LibraryList.aspx");
         }
     }
 }

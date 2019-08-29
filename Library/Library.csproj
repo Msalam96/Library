@@ -75,6 +75,9 @@
     <Content Include="LibraryEdit.aspx" />
     <Content Include="LibraryList.aspx" />
     <Content Include="packages.config" />
+    <Content Include="PatronAdd.aspx" />
+    <Content Include="PatronEdit.aspx" />
+    <Content Include="PatronList.aspx" />
     <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -162,6 +165,27 @@
     </Compile>
     <Compile Include="LibraryList.aspx.designer.cs">
       <DependentUpon>LibraryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PatronAdd.aspx.cs">
+      <DependentUpon>PatronAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatronAdd.aspx.designer.cs">
+      <DependentUpon>PatronAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PatronEdit.aspx.cs">
+      <DependentUpon>PatronEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatronEdit.aspx.designer.cs">
+      <DependentUpon>PatronEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PatronList.aspx.cs">
+      <DependentUpon>PatronList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatronList.aspx.designer.cs">
+      <DependentUpon>PatronList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
