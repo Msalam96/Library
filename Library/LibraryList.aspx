@@ -28,7 +28,7 @@
                     <td><%# Item.Field<string>("City") %></td>
                     <td><%# Item.Field<string>("State") %></td>
                     <td><%# Item.Field<string>("ZipCode") %></td>
-                    <%--<td><asp:hyperlink runat="server" navigateurl='<%# $"~/AuthorEdit.aspx?ID={Item.Field<int>("Id")}" %>' text="Edit" /></td>--%>
+                    <td><asp:hyperlink runat="server" navigateurl='<%# $"~/LibraryEdit.aspx?ID={Item.Field<int>("ID")}" %>' text="Edit" /></td>
                 </tr>
             </itemtemplate>
             <footertemplate>

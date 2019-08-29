@@ -10,7 +10,7 @@
 namespace Library {
     
     
-    public partial class LibraryAdd {
+    public partial class LibraryEdit {
         
         /// <summary>
         /// LocationNameLabel control.
