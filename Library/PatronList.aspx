@@ -42,8 +42,5 @@
             </footertemplate>
         </asp:repeater>
 
-        <div>
-            <asp:hyperlink runat="server" navigateurl="~/Default.aspx">Return To Home Page</asp:hyperlink>
-        </div>
 
 </asp:Content>

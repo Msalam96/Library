@@ -13,6 +13,8 @@ namespace Library
 {
     public partial class BookAdd : System.Web.UI.Page
     {
+        int? bookID = null;
+
         protected void Page_Load(object sender, EventArgs e)
         {
         }
@@ -35,11 +37,12 @@ namespace Library
             //author_id = dt.Rows[0].Field<int>("Author_ID");
 
             int author_id = int.Parse(AuthorList.SelectedValue);
+            //int library_id = int.Parse(LibraryList.SelectedValue);
 
             string title = BookTitle.Text;
             string isbn = ISBN.Text;
   
-            int? id = DatabaseHelper.Insert(@"
+            bookID = DatabaseHelper.Insert(@"
                 insert into Book (Title, Author_ID, ISBN)
                 values (@Title, @Author_ID, @ISBN);
             ",
@@ -47,7 +50,39 @@ namespace Library
                 new SqlParameter("@ISBN", isbn),
                 new SqlParameter("@Author_ID", author_id));
 
-            Response.Redirect("~/BookList.aspx");
+            //if(Available.Text == "Available")
+            //{
+            //    available = 1;
+            //}
+
+            LibraryList.Visible = true;
+            AddLibrary.Visible = true;
+            //Response.Redirect("~/BookList.aspx");
+        }
+
+        protected void AddLibrary_Click(object sender, EventArgs e)
+        {
+            int library_id = int.Parse(LibraryList.SelectedValue);
+
+            int? id = DatabaseHelper.Insert(@"
+                insert into BookCopy (BookID, LibraryID, Available)
+                values (@BookID, @LibraryID, @Available);
+            ",
+                new SqlParameter("@BookID", bookID),
+                new SqlParameter("@LibraryID", library_id),
+                new SqlParameter("@Available", 1));
+
+            //DataTable dt = DatabaseHelper.Retrieve(@"
+            //        select BookCopy.ID, Library.LocationName, Library.ID
+            //        from BookCopy
+            //        inner join Library
+            //            on BookCopy.LibraryID = Library.ID
+            //        order by Library.LocationName
+            //    ");
+
+            //Libraries.DataSource = dt.Rows;
+            //Libraries.DataBind();
+
         }
     }
 }

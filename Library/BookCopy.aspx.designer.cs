@@ -10,7 +10,16 @@
 namespace Library {
     
     
-    public partial class BookEdit {
+    public partial class BookCopy {
+        
+        /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// TitleLabel control.
@@ -49,13 +58,13 @@ namespace Library {
         protected global::System.Web.UI.WebControls.TextBox ISBN;
         
         /// <summary>
-        /// AuthorList control.
+        /// AuthorLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList AuthorList;
+        protected global::System.Web.UI.WebControls.Label AuthorLabel;
         
         /// <summary>
         /// Author control.
@@ -64,15 +73,42 @@ namespace Library {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource Author;
+        protected global::System.Web.UI.WebControls.TextBox Author;
         
         /// <summary>
-        /// Save control.
+        /// LibraryList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Save;
+        protected global::System.Web.UI.WebControls.DropDownList LibraryList;
+        
+        /// <summary>
+        /// Library control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource Library;
+        
+        /// <summary>
+        /// Add control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Add;
+        
+        /// <summary>
+        /// Libraries control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater Libraries;
     }
 }
