@@ -11,10 +11,10 @@
 
         <asp:repeater id="Authors" runat="server" itemtype="DataRow">
             <headertemplate>
-                <table>
+                <table class="table table-hover table-striped table-dark">
                     <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
                         <th>&nbsp;</th>
                     </tr>
             </headertemplate>
@@ -29,9 +29,5 @@
                 </table>
             </footertemplate>
         </asp:repeater>
-
-        <div>
-            <asp:hyperlink runat="server" navigateurl="~/Default.aspx">Return To Home Page</asp:hyperlink>
-        </div>
 
 </asp:Content>

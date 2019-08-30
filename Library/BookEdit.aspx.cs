@@ -18,7 +18,7 @@ namespace Library
         {
             if (!int.TryParse(Request.QueryString["ID"], out bookID))
             {
-                //Response.Redirect("~/BookList.aspx");
+                Response.Redirect("~/BookList.aspx");
             }
 
             if (!IsPostBack)
@@ -36,8 +36,11 @@ namespace Library
                 }
                 else
                 {
-                    //Response.Redirect("~/BookList.aspx");
+                    Response.Redirect("~/BookList.aspx");
                 }
+
+               
+
             }
         }
 
@@ -47,6 +50,7 @@ namespace Library
             string isbn = ISBN.Text;
             int author_id = int.Parse(AuthorList.SelectedValue);
 
+         
             DatabaseHelper.Update(@"
                 update Book set
                     Title = @Title,
@@ -63,9 +67,13 @@ namespace Library
             //Response.Redirect("~/AuthorsList.aspx");
         }
 
+
         protected void Cancel_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/BookList.aspx");
         }
+
+        
     }
+
 }

@@ -27,6 +27,7 @@
                     <td><%# Item.Field<string>("Name") %></td>
 <%--                    <td><%# Item.Field<string>("LastName") %></td>--%>
                     <td><asp:hyperlink runat="server" navigateurl='<%# $"~/BookEdit.aspx?ID={Item.Field<int>("ID")}" %>' text="Edit" /></td>
+                    <td><asp:hyperlink runat="server" navigateurl='<%# $"~/BookCopy.aspx?ID={Item.Field<int>("ID")}" %>' text="Copies" /></td>
 <%--                    <td><asp:hyperlink runat="server" navigateurl='<%# $"~/AuthorEdit.aspx?ID={Item.Field<int>("Id")}" %>' text="Edit" /></td>--%>
                 </tr>
             </itemtemplate>
@@ -35,8 +36,5 @@
             </footertemplate>
         </asp:repeater>
 
-        <div>
-            <asp:hyperlink runat="server" navigateurl="~/Default.aspx">Return To Home Page</asp:hyperlink>
-        </div>
 
 </asp:Content>

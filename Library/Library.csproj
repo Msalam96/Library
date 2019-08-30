@@ -68,9 +68,9 @@
     <Content Include="AuthorEdit.aspx" />
     <Content Include="AuthorsList.aspx" />
     <Content Include="BookAdd.aspx" />
+    <Content Include="BookCopy.aspx" />
     <Content Include="BookEdit.aspx" />
     <Content Include="BookList.aspx" />
-    <Content Include="Default.aspx" />
     <Content Include="LibrarianAdd.aspx" />
     <Content Include="LibrariansList.aspx" />
     <Content Include="LibraryAdd.aspx" />
@@ -122,6 +122,13 @@
     <Compile Include="BookAdd.aspx.designer.cs">
       <DependentUpon>BookAdd.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BookCopy.aspx.cs">
+      <DependentUpon>BookCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookCopy.aspx.designer.cs">
+      <DependentUpon>BookCopy.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BookEdit.aspx.cs">
       <DependentUpon>BookEdit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -137,13 +144,6 @@
       <DependentUpon>BookList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Data\DatabaseHelper.cs" />
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

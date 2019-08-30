@@ -20,7 +20,7 @@ namespace Library
                     Author.LastName + ', ' + Author.FirstName as Name
                     from Book
                     inner join Author
-                    on Author.ID = Book.Author_ID
+                        on Author.ID = Book.Author_ID
                     order by Title
                 ");
 
