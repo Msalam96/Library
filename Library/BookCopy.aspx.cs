@@ -88,6 +88,7 @@ namespace Library
             ",
             new SqlParameter("@Available", 1),
             new SqlParameter("@ID", id));
+
         }
 
         protected void Unavailable_Click(object sender, EventArgs e)
@@ -103,6 +104,12 @@ namespace Library
             ",
                 new SqlParameter("@Available", bit),
                 new SqlParameter("@ID", id));
+        }
+
+        protected void Checkout_Click(object sender, EventArgs e)
+        {
+           
+
         }
     }
 }

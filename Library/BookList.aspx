@@ -11,11 +11,11 @@
 
         <asp:repeater id="Books" runat="server" itemtype="DataRow">
             <headertemplate>
-                <table>
+                <table class="table table-hover table-striped table-dark">
                     <tr>
-                        <th>Title</th>
-                        <th>ISBN</th>
-                        <th>Author Name</th>
+                        <th class="col">Title</th>
+                        <th class="col">ISBN</th>
+                        <th class="col">Author Name</th>
                         <th></th>
                         <th>&nbsp;</th>
                     </tr>

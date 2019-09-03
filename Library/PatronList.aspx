@@ -11,16 +11,16 @@
 
         <asp:repeater id="Patrons" runat="server" itemtype="DataRow">
             <headertemplate>
-                <table>
+                <table class="table table-hover table-striped table-dark">
                     <tr>
-                        <th>Library Card Number</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Address</th>
-                        <th>City</th>
-                        <th>State</th>
-                        <th>Zip Code</th>
-                        <th>Email Address</th>
+                        <th scope="col">Library Card Number</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">City</th>
+                        <th scope="col">State</th>
+                        <th scope="col">Zip Code</th>
+                        <th scope="col">Email Address</th>
                         <th>&nbsp;</th>
                     </tr>
             </headertemplate>

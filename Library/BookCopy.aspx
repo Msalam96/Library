@@ -39,9 +39,9 @@
             <div>
                 <asp:repeater id="Libraries" runat="server" itemtype="DataRow">
                     <headertemplate>
-                        <table>
-                            <tr>
-                                <th>Library</th>
+                    <table class="table table-hover table-striped table-dark">
+                        <tr>
+                                <th scope="col">Library</th>
                                 <th></th>
                                 <th>&nbsp;</th>
                             </tr>
@@ -51,7 +51,9 @@
                             <td><%# Item.Field<string>("LocationName") %></td>
                             <td><asp:button ID="Available" Text="Available" OnClick="Available_Click" CommandArgument='<%#Item.Field<int>("ID") %>' runat="server"/></td>
                             <td><asp:button ID="Unavailable" Text="Unavailable" OnClick="Unavailable_Click" CommandArgument='<%#Item.Field<int>("ID") %>' runat="server"/></td>
-<%--                            <td><asp:hyperlink runat="server" navigateurl='<%# $"~/AuthorEdit.aspx?ID={Item.Field<int>("Id")}" %>' text="Edit" /></td>--%>
+                            <td><asp:hyperlink runat="server" navigateurl='<%# $"~/Checkout.aspx?ID={Item.Field<int>("BookCopyID")}" %>' text="Checkout" /></td>
+<%--                           <td><asp:hyperlink runat="server" navigateurl='<%# $"~/AuthorEdit.aspx?ID={Item.Field<int>("Id")}" %>' text="Edit" /></td>--%>
+               
                         </tr>
                     </itemtemplate>
                     <footertemplate>

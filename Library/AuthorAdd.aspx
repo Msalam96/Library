@@ -5,13 +5,13 @@
 
     <fieldset>
 
-        <div>
-            <asp:label id="FirstNameLabel" runat="server" associatedcontrolid="FirstName" text="First Name: " />
+        <div class="form-group row">
+            <asp:label id="FirstNameLabel" class="col-sm-2 col-form-label" runat="server" associatedcontrolid="FirstName" text="First Name: " />
             <asp:textbox id="FirstName" runat="server" />
         </div>
 
-        <div>
-            <asp:label id="LastNameLabel" runat="server" associatedcontrolid="LastName" text="Last Name: " />
+        <div class="form-group row">
+            <asp:label id="LastNameLabel" class="col-sm-2 col-form-label" runat="server" associatedcontrolid="LastName" text="Last Name: " />
             <asp:textbox id="LastName" runat="server" />
         </div>
 
