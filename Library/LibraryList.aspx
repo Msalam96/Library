@@ -10,14 +10,14 @@
         </div>
 
         <asp:repeater id="Libraries" runat="server" itemtype="DataRow">
-            <headertemplate>
-                <table>
+            <headertemplate>        
+                <table class="table table-hover table-striped table-dark">                    
                     <tr>
-                        <th>Location</th>
-                        <th>Address</th>
-                        <th>City</th>
-                        <th>State</th>
-                        <th>Zip Code</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">City</th>
+                        <th scope="col">State</th>
+                        <th scope="col">Zip Code</th>
                         <th>&nbsp;</th>
                     </tr>
             </headertemplate>

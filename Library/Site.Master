@@ -29,11 +29,11 @@
                     <li class="nav-item">
                         <asp:hyperlink runat="server" cssclass="nav-link" navigateurl="~/BookList.aspx">Books</asp:hyperlink></li>
                     <li class="nav-item">
-                        <asp:hyperlink runat="server" cssclass="nav-link" navigateurl="~/PatronList.aspx">Books</asp:hyperlink></li>
+                        <asp:hyperlink runat="server" cssclass="nav-link" navigateurl="~/PatronList.aspx">Patrons</asp:hyperlink></li>
                     <li class="nav-item">
-                        <asp:hyperlink runat="server" cssclass="nav-link" navigateurl="~/LibraryList.aspx">Books</asp:hyperlink></li>
+                        <asp:hyperlink runat="server" cssclass="nav-link" navigateurl="~/LibraryList.aspx">Libraries</asp:hyperlink></li>
                     <li class="nav-item">
-                        <asp:hyperlink runat="server" cssclass="nav-link" navigateurl="~/LibrariansList.aspx">Books</asp:hyperlink></li>
+                        <asp:hyperlink runat="server" cssclass="nav-link" navigateurl="~/LibrariansList.aspx">Librarians</asp:hyperlink></li>
                 </ul>
             </div>
         </nav>
